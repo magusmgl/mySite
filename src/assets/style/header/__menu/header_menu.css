@@ -1,0 +1,16 @@
+@media (max-width: 767px) {
+    .header__menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        padding: 70px 10px 20px 10px;
+        background-color: rgb(90, 158, 153);
+        transition: all 0.4s ease 0s;
+    }
+    .header__menu.change {
+        top: 0;
+    }
+}
