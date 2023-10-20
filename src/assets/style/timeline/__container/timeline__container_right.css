@@ -1,0 +1,33 @@
+.timeline__container_right::after {
+    left: -13px;
+}
+
+.timeline__container_right {
+    left: 50%;
+}
+
+.timeline__container_right::before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 22px;
+    left: 30px;
+    z-index: 1;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+@media screen and (max-width: 600px) {
+    .timeline__container_right {
+        left: 0;
+    }
+
+    .timeline__container_right::before {
+        left: 60px;
+    }
+    .timeline__container_right::after {
+        left: 18px;
+    }
+}
