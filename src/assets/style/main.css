@@ -36,10 +36,7 @@ body {
     flex-direction: column;
 }
 
-.page__about-block {
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
+
 
 @media (max-width: 479px) {
     .container {
