@@ -1,0 +1,25 @@
+.about-block__body {
+    color: #fff;
+    width: auto;
+    background-color: rgb(90, 158, 153);
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+}
+
+@media (max-width: 992px) {
+    .about-block__body {
+        padding: 13px 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-block__body {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 479px) {
+    .about-block__body {
+        box-shadow: none;
+    }
+}
