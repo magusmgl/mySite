@@ -1,0 +1,5 @@
+.skills_block__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
