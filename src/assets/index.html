@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <!--    <link rel="stylesheet" href="style/header.css">-->
     <link rel="stylesheet" href="style/header/header.css">
     <link rel="stylesheet" href="style/header/__body/header_body.css">
     <link rel="stylesheet" href="style/header/__burger/header__burger.css">
@@ -11,15 +10,12 @@
     <link rel="stylesheet" href="style/header/__list/header__list.css">
     <link rel="stylesheet" href="style/header/__menu/header_menu.css">
 
-    <!--    <link rel="stylesheet" href="style/burger.css">-->
     <link rel="stylesheet" href="style/burger/burger.css">
     <link rel="stylesheet" href="style/burger/__bar/burger__bar.css">
 
-    <!--    <link rel="stylesheet" href="style/background-img.css">-->
     <link rel="stylesheet" href="style/page/__background/page___background.css">
     <link rel="stylesheet" href="style/background/background-img.css">
 
-    <!--    <link rel="stylesheet" href="style/main-block.css">-->
     <link rel="stylesheet" href="style/page/page.css">
     <link rel="stylesheet" href="style/page/__main-block/page__main-block.css">
     <link rel="stylesheet" href="style/main-block/__body/main-block__body.css">
@@ -27,8 +23,6 @@
     <link rel="stylesheet" href="style/main-block/__name/main-block__name.css">
     <link rel="stylesheet" href="style/main-block/__profession/main-block__profession.css">
 
-
-    <!--    <link rel="stylesheet" href="style/about_block.css">-->
     <link rel="stylesheet" href="style/page/__about-block/page__about-block.css">
     <link rel="stylesheet" href="style/about-block/__body/about-block__body.css">
     <link rel="stylesheet" href="style/about-block/__text/about-block__text.css">
@@ -38,10 +32,12 @@
     <link rel="stylesheet" href="style/education-block/education-block.css">
     <link rel="stylesheet" href="style/education-block/__body/education-block__body.css">
     <link rel="stylesheet" href="style/education-block/__title/education-block__title.css">
+    <link rel="stylesheet" href="style/page/__education-block/page__education-block.css">
 
     <link rel="stylesheet" href="style/experience-block/experience-block.css">
     <link rel="stylesheet" href="style/experience-block/__body/experience-block__body.css">
     <link rel="stylesheet" href="style/experience-block/__title/experience-block__title.css">
+    <link rel="stylesheet" href="style/page/__experience-block/page__experience-block.css">
 
     <link rel="stylesheet" href="style/timeline/timeline.css">
     <link rel="stylesheet" href="style/timeline/__content/timeline__content.css">
@@ -50,7 +46,6 @@
     <link rel="stylesheet" href="style/timeline/__container/timeline__container_right.css">
 
     <link rel="stylesheet" href="style/skills-block/skills-block.css">
-    <link rel="stylesheet" href="style/page/__skills-block/">
 
     <link rel="stylesheet" href="style/skills-block/__body/skills-block__body.css">
     <link rel="stylesheet" href="style/skills-block/__title/skills-block__title.css">
@@ -60,8 +55,6 @@
     <link rel="stylesheet" href="style/skills-block/__bar/skills_block__bar.css">
 
 
-    <!--    <link rel="stylesheet" href="style/skills-block/__bar-container/skills-block__bar-container.css">-->
-    <!--    <link rel="stylesheet" href="style/skills-block/__item/skills-block__item.css">-->
     <link rel="stylesheet" href="style/page/__skills-block/page__skills-block.css">
 
     <link rel="stylesheet" href="style/normalize.css">
@@ -91,19 +84,19 @@
                 <nav class="header__menu">
                     <ul class="header__list">
                         <li>
-                            <a href="" class="header__link">Home</a>
+                            <a href="#main" class="header__link">Home</a>
                         </li>
                         <li>
-                            <a href="" class="header__link">Intro</a>
+                            <a href="#about" class="header__link">Intro</a>
                         </li>
                         <li>
-                            <a href="" class="header__link">Education</a>
+                            <a href="#education" class="header__link">Education</a>
                         </li>
                         <li>
-                            <a href="" class="header__link">Experience</a>
+                            <a href="#experience" class="header__link">Experience</a>
                         </li>
                         <li>
-                            <a href="" class="header__link">Skills</a>
+                            <a href="#skills" class="header__link">Skills</a>
                         </li>
                     </ul>
                 </nav>
@@ -112,9 +105,9 @@
     </header>
     <main class="page">
         <div class="page__background background-img"></div>
-        <div class="page__main-block main-block">
+        <div class="page__main-block main-block" id="main">
             <div class="main-block__container container">
-                <div class="main-block__body">
+                <div class="main-block__body" >
                     <h4 class="main-block__name">Maksim Glazunov</h4>
                     <h6 class="main-block__profession">
                         Software Engineer & UI/UX Expert
@@ -141,9 +134,9 @@
             </div>
 
         </div>
-        <div class="page__about-block about-block">
+        <div class="page__about-block about-block" id="about">
             <div class="about-block__container container">
-                <div class="about-block__body">
+                <div class="about-block__body" >
                     <h4 class="about-block__title">About</h4>
                     <p class="about-block__text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequuntur delectus eaque
@@ -159,7 +152,7 @@
                 </div>
             </div>
         </div>
-        <div class="page__education-block  education-block">
+        <div class="page__education-block  education-block" id="education">
             <div class="education-block__container container">
                 <div class="education-block__body">
                     <div class="education-block__title">
@@ -223,7 +216,7 @@
                 </div>
             </div>
         </div>
-        <div class="page__experience-block  experience-block">
+        <div class="page__experience-block  experience-block"  id="experience">
             <div class="experience-block__container container">
                 <div class="experience-block__body">
                     <div class="experience-block__title">
@@ -264,10 +257,9 @@
                 </div>
             </div>
         </div>
-
-        <div class="page__skills-block skills-block">
+        <div class="page__skills-block skills-block" id="skills">
             <div class="skills-block__container container">
-                <div class="skills-block__body">
+                <div class="skills-block__body" >
                     <div class="skills-block__title">
                         <h4>Skills</h4>
                     </div>

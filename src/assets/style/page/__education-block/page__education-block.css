@@ -1,4 +1,4 @@
-.page__about-block {
+.page__education-block {
     grid-column-start: 2;
     grid-column-end: 3;
     border-top: 80px solid transparent;
@@ -6,7 +6,7 @@
 }
 
 @media (max-width: 767px) {
-    .page__about-block {
+    .page__education-block {
         border-top: 60px solid transparent;
         margin-top: -60px;
     }
