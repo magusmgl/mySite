@@ -1,8 +1,10 @@
 .timeline__content {
+    color: #616161;
     padding: 20px 30px;
     background-color: white;
     position: relative;
     border-radius: 6px;
+
 }
 
 .timeline__content h6 {
