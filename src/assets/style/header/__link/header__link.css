@@ -4,6 +4,12 @@
     font-size: 1.2rem   ;
     line-height: 123%;
 }
+
+.header__link:active,
+.header__link:hover
+ {
+    color: #939393;
+}
 @media (max-width: 479px) {
     .header__link {
         font-size: 1.4rem;
@@ -11,7 +17,4 @@
 }
 
 @media (max-width: 767px) {
-    .header__link {
-        color: #fff
-    }
 }
