@@ -6,7 +6,7 @@
 }
 
 .header__link:active,
-.header__link:hover
+.header__link:focus
  {
     color: #939393;
 }
