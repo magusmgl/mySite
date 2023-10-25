@@ -11,11 +11,18 @@
   "author": "m.glazunov",
   "description": "",
   "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.8.1",
+    "css-minimizer-webpack-plugin": "^5.0.1",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-concat-css": "^3.1.0",
     "html-webpack-plugin": "^5.5.3",
+    "style-loader": "^3.3.3",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }

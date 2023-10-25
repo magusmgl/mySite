@@ -1,3 +1,5 @@
+import "./styles/style.css"
+
 function openNav() {
     const headerBurger = document.querySelector(".header__burger");
     const headerNav = document.querySelector(".header__menu");
@@ -7,7 +9,6 @@ function openNav() {
     body.classList.toggle('lock');
 }
 
-const headerBurger = document.querySelector(".header__burger")
 document.addEventListener('click', (e) => {
     if (e.target.nodeName === 'A') {
         openNav();
