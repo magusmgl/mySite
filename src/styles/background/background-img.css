@@ -1,0 +1,5 @@
+.background-img {
+    background: url("src/styles/background/img/cover_small.jpg") center no-repeat;
+    background-size: cover;
+    filter: blur(2px)
+}
