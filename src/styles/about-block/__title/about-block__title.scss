@@ -1,4 +1,5 @@
 @import "src/styles/variables.scss";
+@import "src/styles/extends.scss";
 
 .about-block__title {
   @extend %for-block_title;

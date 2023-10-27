@@ -1,4 +1,5 @@
 @import "src/styles/variables.scss";
+@import "src/styles/extends.scss";
 
 .about-block__body {
   @extend %for_block_padding;

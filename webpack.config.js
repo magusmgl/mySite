@@ -20,7 +20,7 @@ module.exports = {
         splitChunks: {
             chunks: "all"
         },
-        minimize: true,
+        minimize: false,
         minimizer: [
             "...",
             new CssMinimizerPlugin()
@@ -40,13 +40,23 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                use: [MiniCssExtractPlugin.loader, "css-loader"],
+                use: [{loader: MiniCssExtractPlugin.loader,
+                    options: {
+                    esModule: true,
+                    }},
+                    "css-loader"],
             },
             {
                 test: /\.s[ac]ss$/,
-                use: [MiniCssExtractPlugin.loader,
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            esModule: true,
+                        },
+                    },
                     "css-loader",
-                    "sass-loader",
+                    "sass-loader"
                 ],
             },
             {
