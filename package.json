@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "watch": "webpack --mode development --watch"
+    "watch": "webpack --mode development --watch",
+    "minifyImages": "imagemin src/assets/img/* --out-dir=src/assets/img/minify",
+    "scss": "node-sass -r --output-style expanded src/styles/ -o src/css"
   },
   "author": "m.glazunov",
   "description": "",
@@ -18,6 +20,11 @@
     "gulp-concat": "^2.6.1",
     "gulp-concat-css": "^3.1.0",
     "html-webpack-plugin": "^5.5.3",
+    "imagemin-cli": "^7.0.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "node-sass": "^9.0.0",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
     "style-loader": "^3.3.3",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4"

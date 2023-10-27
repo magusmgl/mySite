@@ -1,4 +1,4 @@
-import "./styles/style.css"
+import "./styles/main.scss"
 
 function openNav() {
     const headerBurger = document.querySelector(".header__burger");
