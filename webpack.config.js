@@ -10,8 +10,22 @@ const StylelintPlugin = require('stylelint-webpack-plugin');
 module.exports = {
     context: path.resolve(__dirname, "src"),
     mode: "development",
-    devtool: "source-map",
+    devtool: 'inline-source-map',
     entry: "./index.ts",
+    devServer: {
+        static: path.resolve(__dirname, "dist"),
+        compress: true,
+        port:9000,
+        // stats: {
+        //     children: false
+        // },
+        hot: true,
+        open: true,
+        client: {
+            logging: 'info',
+        },
+
+    },
     output: {
         filename: "[name].[contenthash].js",
         path: path.resolve(__dirname, "dist")
