@@ -1,0 +1,12 @@
+@import "__bar/burger__bar.scss";
+
+.burger {
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+
+  .change {
+    left: 165px;
+  }
+}
+
