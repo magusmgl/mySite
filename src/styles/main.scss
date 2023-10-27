@@ -20,7 +20,7 @@ body {
   font-size: $fs_regular;
   color: $black_main_color;
   @media (max-width: 479px) {
-    .lock {
+    &.lock {
       overflow: hidden;
     }
   }

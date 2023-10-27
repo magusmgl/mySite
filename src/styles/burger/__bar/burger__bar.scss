@@ -1,30 +1,5 @@
 @import "src/styles/variables.scss";
 
-.burger__bar1 {
-  background-color: $yellow_main_color;
-
-  .change {
-    transform: translate(0, 10px) rotate(45deg);
-    background-color: $yellow_main_color;
-  }
-}
-
-.burger__bar2 {
-  background: $green_main_color;
-
-  .change {
-    opacity: 0;
-  }
-}
-
-.burger__bar3 {
-  background-color: $purple_main_color;
-
-  .change {
-    transform: translate(0, -10px) rotate(-45deg);
-    background-color: $yellow_main_color;
-  }
-}
 
 .bar {
   width: $bar_w_normal;
@@ -36,6 +11,36 @@
   @media (max-width: 479px) {
     width: $b_w_big;
   }
+
+  &.burger__bar1 {
+    background-color: $yellow_main_color;
+  }
+
+  &.burger__bar2 {
+    background: $green_main_color;
+  }
+
+  &.burger__bar3 {
+    background-color: $purple_main_color;
+  }
 }
+
+.change {
+  .burger__bar1 {
+    transform: translate(0, 10px) rotate(45deg);
+    background-color: $yellow_main_color;
+  }
+
+  .burger__bar2 {
+    opacity: 0;
+  }
+
+  .burger__bar3 {
+    transform: translate(0, -10px) rotate(-45deg);
+    background-color: $yellow_main_color;
+  }
+}
+
+
 
 
