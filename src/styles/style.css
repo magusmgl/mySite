@@ -1,5 +1,6 @@
-@import "fonts.css";
+@import "src/styles/fonts.scss";
 @import "~normalize.css";
+@import "variables.scss";
 
 html,
 body {
