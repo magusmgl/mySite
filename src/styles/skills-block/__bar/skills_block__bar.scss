@@ -1,0 +1,41 @@
+@import "src/styles/variables.scss";
+
+.skills-block__bar {
+  font-size: $text_fs_big;
+  font-weight: $text_fw;
+  text-align: right;
+  padding: 10px 5px 10px 0;
+  color: $black_main_color;
+  background-color: $yellow_main_color;
+
+  &.skills-block__bar_html {
+    width: 90%;
+  }
+
+  &.skills-block__bar_css {
+    width: 80%;
+  }
+
+  &.skills-block__bar_js {
+    width: 65%;
+  }
+
+  &.skills-block__bar_python {
+    width: 60%;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 0.8rem;
+  }
+  @media (max-width: 479px) {
+    font-size: 0.6rem;
+  }
+}
+
+
+
+

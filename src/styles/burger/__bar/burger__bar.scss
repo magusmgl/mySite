@@ -1,0 +1,41 @@
+@import "src/styles/variables.scss";
+
+.burger__bar1 {
+  background-color: $yellow_main_color;
+
+  .change {
+    transform: translate(0, 10px) rotate(45deg);
+    background-color: $yellow_main_color;
+  }
+}
+
+.burger__bar2 {
+  background: $green_main_color;
+
+  .change {
+    opacity: 0;
+  }
+}
+
+.burger__bar3 {
+  background-color: $purple_main_color;
+
+  .change {
+    transform: translate(0, -10px) rotate(-45deg);
+    background-color: $yellow_main_color;
+  }
+}
+
+.bar {
+  width: $bar_w_normal;
+  height: $b_h;
+  z-index: 2;
+  margin: 6px 0;
+  transition: 0.4s;
+
+  @media (max-width: 479px) {
+    width: $b_w_big;
+  }
+}
+
+

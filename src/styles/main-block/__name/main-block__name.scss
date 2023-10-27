@@ -1,0 +1,20 @@
+@import "src/styles/variables.scss";
+
+.main-block__name {
+  font-size: $main_fs_big;
+  font-weight: $main_fw;
+  line-height: $main_lh;
+  margin: 1.14rem 0 0 0;
+  text-shadow: $main_ts;
+
+  @media (max-width: 992px) {
+    font-size: $main_fs_normal;
+  }
+
+  @media (max-width: 767px) {
+    font-size: $main_fs_small;
+  }
+}
+
+
+

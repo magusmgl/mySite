@@ -1,0 +1,80 @@
+@import "src/styles/fonts.scss";
+@import "~normalize.css";
+@import "variables.scss";
+@import "about-block/about_block.scss";
+@import "background/background-img.scss";
+@import "burger/burger.scss";
+@import "education-block/education-block.scss";
+@import "experience-block/experience-block.scss";
+@import "header/header.scss";
+@import "main-block/main_block.scss";
+@import "page/page.scss";
+@import "skills-block/skills-block.scss";
+@import "timeline/timeline.scss";
+
+html,
+body {
+  font-family: "Lato Regular", Roboto, sans-serif;
+  height: 100%;
+  line-height: 1;
+  font-size: $fs_regular;
+  color: $black_main_color;
+  @media (max-width: 479px) {
+    .lock {
+      overflow: hidden;
+    }
+  }
+}
+
+.container {
+  max-width: 1046px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+
+  @media (max-width: 479px) {
+    padding: 0;
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  color: $white_main_color;
+}
+
+/* обнуление */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-style: inherit;
+}

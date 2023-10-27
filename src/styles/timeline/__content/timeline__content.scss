@@ -1,0 +1,24 @@
+@import "src/styles/variables.scss";
+
+.timeline__content {
+  color: #616161;
+  padding: 20px 30px;
+  background-color: $white_main_color;
+  position: relative;
+  border-radius: 6px;
+
+  & h6 {
+    @extend %for-block_title;
+    margin-bottom: 20px;
+
+    @media (max-width: 992px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  & p {
+    @extend %for-block_text;
+  }
+}
+
+

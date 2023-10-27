@@ -1,0 +1,12 @@
+@import "src/styles/variables.scss";
+
+.about-block__title {
+  @extend %for-block_title;
+  margin-bottom: 20px;
+
+  @media (max-width: 992px) {
+    margin-bottom: 10px;
+  }
+}
+
+

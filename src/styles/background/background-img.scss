@@ -1,0 +1,7 @@
+@import "src/styles/variables.scss";
+
+.background-img {
+    background: url("../assets/img/cover_small.jpg") center no-repeat;
+    background-size: cover;
+    filter: $bg_img_filter;
+}

@@ -1,0 +1,9 @@
+@import "src/styles/variables.scss";
+
+.skills_block__item p {
+    color: $white_main_color;
+    @extend %for-block_text;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

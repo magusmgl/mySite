@@ -1,0 +1,30 @@
+@import "src/styles/variables.scss";
+
+.timeline__container_left {
+    left: 0;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 0;
+        width: 0;
+        top: 22px;
+        right: 30px;
+        z-index: 1;
+        border: medium solid white;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent white;
+    }
+
+    @media screen and (max-width: 600px) {
+        &::before {
+            left: 60px;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+    }
+}
+
+
+
+

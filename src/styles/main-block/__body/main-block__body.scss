@@ -1,0 +1,31 @@
+@import "src/styles/variables.scss";
+
+//.main-block__body > *:not(:last-child) {
+//  padding: 0 0 5px 0;
+//}
+
+.main-block__body {
+  color: $white_main_color;
+  width: auto;
+  background-color: $yellow_main_color;
+  padding: $block_padding;
+  box-shadow: $block_shadow;
+
+  @media (max-width: 992px) {
+    padding: $block_padding_for_992;
+  }
+
+  @media (max-width: 767px) {
+    padding: $block_padding_for_767;
+  }
+
+  @media (max-width: 479px) {
+    box-shadow: none;
+  }
+
+  > *:not(:last-child) {
+    padding: 0 0 5px 0;
+  }
+
+}
+

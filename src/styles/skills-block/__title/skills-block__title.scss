@@ -1,0 +1,13 @@
+@import "src/styles/variables.scss";
+
+.skills-block__title {
+  color: $white_main_color;
+  @extend %for-block_title;
+  margin-bottom: 20px;
+
+  @media (max-width: 992px) {
+    margin-bottom: 10px;
+  }
+}
+
+
