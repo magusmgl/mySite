@@ -1,0 +1,158 @@
+doctype html
+html(lang='en')
+    head
+        title My Site
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')
+    body
+        .wrapper
+            header.header
+                .container
+                    .header__body
+                        .header__burger.burger
+                            .burger__bar1.bar
+                            .burger__bar2.bar
+                            .burger__bar3.bar
+                        nav.header__menu
+                            ul.header__list
+                                li
+                                    a.header__link(href='#main') Home
+                                li
+                                    a.header__link(href='#about') Intro
+                                li
+                                    a.header__link(href='#education') Education
+                                li
+                                    a.header__link(href='#experience') Experience
+                                li
+                                    a.header__link(href='#skills') Skills
+            main.page
+                .page__background.background-img
+                #main.page__main-block.main-block
+                    .main-block__container.container
+                        .main-block__body
+                            h4.main-block__name Maksim Glazunov
+                            h6.main-block__profession
+                                | Software Engineer & UI/UX Expert
+                            ul.main-block__contacts-list
+                                li
+                                    span.main-block__contacts-item Location
+                                    span Yekaterinburg, RU
+                                li.main-block__contacts-item
+                                    span Phone
+                                    span +7 912 230 30 213
+                                li.main-block__contacts-item
+                                    span Email
+                                    span m.glazunov@gmail.com
+                                li.main-block__contacts-item
+                                    span Web
+                                    span www.maxglazunov.com
+                #about.page__about-block.about-block
+                    .about-block__container.container
+                        .about-block__body
+                            h4.about-block__title About
+                            p.about-block__text
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequuntur delectus eaque
+                                | illo maiores omnis praesentium quidem quo soluta totam? Consectetur corporis culpa deleniti
+                                | dicta dignissimos error esse et eum expedita facere, fuga id, maxime mollitia nam nesciunt nihil
+                                | numquam odio officia officiis, possimus quas quibusdam recusandae reprehenderit suscipit ut?
+                                | Adipisci consequuntur, fugit illo illum numquam possimus repudiandae soluta! Aspernatur
+                                | consectetur eius error, quibusdam reiciendis sit sunt veritatis. Aperiam autem doloribus earum,
+                                | ex nisi numquam quaerat recusandae sapiente voluptatibus voluptatum. Cumque dignissimos dolor
+                                | eligendi inventore iste magni natus neque optio, saepe ut? Adipisci, eligendi fugiat ipsa
+                                | molestiae perspiciatis quidem repudiandae?
+                #education.page__education-block.education-block
+                    .education-block__container.container
+                        .education-block__body
+                            .education-block__title
+                                h4 Education
+                            .education-block__timeline.timeline
+                                .timeline__container.timeline__container_left
+                                    .timeline__content
+                                        h6 2014
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis iste qui
+                                            | quia?
+                                            | Aliquam,
+                                            | minima, perferendis. Adipisci animi, architecto atque consectetur corporis
+                                            | culpa,
+                                            | dicta
+                                            | dignissimos dolorem eligendi error in quas tempora.
+                                .timeline__container.timeline__container_right
+                                    .timeline__content
+                                        h6 2016
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at atque
+                                            | blanditiis
+                                            | deleniti
+                                            | dicta
+                                            | ea earum et exercitationem laborum laudantium, necessitatibus nesciunt rem
+                                            | sapiente
+                                            | soluta
+                                            | temporibus ut vel veniam voluptatibus?
+                                .timeline__container.timeline__container_left
+                                    .timeline__content
+                                        h6 2018
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis iste qui
+                                            | quia?
+                                            | Aliquam,
+                                            | minima, perferendis. Adipisci animi, architecto atque consectetur corporis
+                                            | culpa,
+                                            | dicta
+                                            | dignissimos dolorem eligendi error in quas tempora.
+                                .timeline__container.timeline__container_right
+                                    .timeline__content
+                                        h6 2021
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at atque
+                                            | blanditiis
+                                            | deleniti
+                                            | dicta
+                                            | ea earum et exercitationem laborum laudantium, necessitatibus nesciunt rem
+                                            | sapiente
+                                            | soluta
+                                            | temporibus ut vel veniam voluptatibus?
+                #experience.page__experience-block.experience-block
+                    .experience-block__container.container
+                        .experience-block__body
+                            .experience-block__title
+                                h4 Experience
+                            .experience-block__timeline.timeline
+                                .timeline__container.timeline__container_left
+                                    .timeline__content
+                                        h6 2021
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur commodi
+                                            | corporis
+                                            | et minus, perspiciatis placeat possimus praesentium provident qui unde!
+                                .timeline__container.timeline__container_right
+                                    .timeline__content
+                                        h6 2022
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis esse et
+                                            | exercitationem illo nemo quibusdam tempore, totam veniam voluptatum.
+                                .timeline__container.timeline__container_left
+                                    .timeline__content
+                                        h6 2023
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, eligendi eum
+                                            | molestias porro praesentium quidem repellat?
+                #skills.page__skills-block.skills-block
+                    .skills-block__container.container
+                        .skills-block__body
+                            .skills-block__title
+                                h4 Skills
+                            ul.skills_block__list
+                                li.skills_block__item
+                                    p HTML
+                                    .skills-block__bar-container
+                                        .skills-block__bar.skills-block__bar_html 90%
+                                    p CSS
+                                    .skills-block__bar-container
+                                        .skills-block__bar.skills-block__bar_css 80%
+                                    p JavaScript
+                                    .skills-block__bar-container
+                                        .skills-block__bar.skills-block__bar_js 65%
+                                    p Python
+                                    .skills-block__bar-container
+                                        .skills-block__bar.skills-block__bar_python 60%

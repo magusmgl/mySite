@@ -20,7 +20,7 @@ module.exports = {
         splitChunks: {
             chunks: "all"
         },
-        minimize: false,
+        minimize: true,
         minimizer: [
             "...",
             new CssMinimizerPlugin()
@@ -30,7 +30,7 @@ module.exports = {
         new HtmlWebpackPlugin(
             {
                 filename: "index.html",
-                template: "./index.html"
+                template: "./index.pug"
             }
         ),
         new CleanWebpackPlugin(),
@@ -66,6 +66,13 @@ module.exports = {
             {
                 test: /\.(ttf|woff|woff2|eot)$/,
                 type: "asset/resource",
+            },
+            {
+                test: /\.pug$/,
+                loader: "pug-loader",
+                options: {
+                    pretty: true
+                }
             },
         ]
     }
