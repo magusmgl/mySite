@@ -1,10 +1,9 @@
 .page__education-block {
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column: 2/3;
   border-top: 80px solid transparent;
   margin-top: -80px;
 
-  @media (max-width: 767px) {
+  @media (max-width <= 767px) {
     border-top: 60px solid transparent;
     margin-top: -60px;
   }

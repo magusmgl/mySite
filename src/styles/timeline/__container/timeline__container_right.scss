@@ -1,4 +1,4 @@
-@import "src/styles/variables.scss";
+@import "src/styles/variables";
 
 .timeline__container_right {
   left: 50%;
@@ -20,12 +20,13 @@
     border-color: transparent white transparent transparent;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width <= 600px) {
     left: 0;
 
     &::before {
       left: 60px;
     }
+
     &::after {
       left: 18px;
     }

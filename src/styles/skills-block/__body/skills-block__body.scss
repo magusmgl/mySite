@@ -1,8 +1,9 @@
 @import "src/styles/variables";
-@import "src/styles/extends.scss";
+@import "../../extendsForBlock";
 
 .skills-block__body {
-    @extend %for_block_padding;
+    @extend %for-block-padding;
+
     color: $black_main_color;
     background-color: $purple_main_color;
 }

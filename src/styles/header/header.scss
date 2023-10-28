@@ -1,9 +1,9 @@
-@import "src/styles/variables.scss";
-@import "__body/header_body.scss";
-@import "__burger/header__burger.scss";
-@import "__link/header__link.scss";
-@import "__list/header__list.scss";
-@import "__menu/header_menu.scss";
+@import "src/styles/variables";
+@import "__body/header_body";
+@import "__burger/header__burger";
+@import "__link/header__link";
+@import "__list/header__list";
+@import "__menu/header_menu";
 
 header {
   position: fixed;

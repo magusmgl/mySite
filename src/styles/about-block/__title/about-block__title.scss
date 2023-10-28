@@ -1,11 +1,12 @@
-@import "src/styles/variables.scss";
-@import "src/styles/extends.scss";
+@import "src/styles/variables";
+@import "../../extendsForBlock";
 
 .about-block__title {
-  @extend %for-block_title;
+  @extend %for-block-title;
+
   margin-bottom: 20px;
 
-  @media (max-width: 992px) {
+  @media (max-width <= 992px) {
     margin-bottom: 10px;
   }
 }

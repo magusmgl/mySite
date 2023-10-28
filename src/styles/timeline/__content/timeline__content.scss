@@ -1,5 +1,5 @@
-@import "src/styles/variables.scss";
-@import "src/styles/extends.scss";
+@import "src/styles/variables";
+@import "../../extendsForBlock";
 
 .timeline__content {
   color: #616161;
@@ -9,10 +9,11 @@
   border-radius: 6px;
 
   & h6 {
-    @extend %for-block_title;
+    @extend %for-block-title;
+
     margin-bottom: 20px;
 
-    @media (max-width: 992px) {
+    @media (max-width <= 992px) {
       margin-bottom: 10px;
     }
   }

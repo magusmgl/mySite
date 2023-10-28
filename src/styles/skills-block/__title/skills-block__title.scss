@@ -1,12 +1,13 @@
-@import "src/styles/variables.scss";
-@import "src/styles/extends.scss";
+@import "src/styles/variables";
+@import "../../extendsForBlock";
 
 .skills-block__title {
+  @extend %for-block-title;
+
   color: $white_main_color;
-  @extend %for-block_title;
   margin-bottom: 20px;
 
-  @media (max-width: 992px) {
+  @media (max-width <= 992px) {
     margin-bottom: 10px;
   }
 }

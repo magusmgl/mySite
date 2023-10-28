@@ -1,15 +1,14 @@
 .page__main-block {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  margin: -180px 0 0 0;
+  grid-column: 2/3;
+  margin: -180px 0 0;
   z-index: 2;
 
-  @media (max-width: 992px) {
-    margin: -120px 0 0 0;
+  @media (max-width <= 992px) {
+    margin: -120px 0 0;
   }
 
-  @media (max-width: 767px) {
-    margin: -100px 0 0 0;
+  @media (max-width <= 767px) {
+    margin: -100px 0 0;
   }
 }
 

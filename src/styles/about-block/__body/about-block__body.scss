@@ -1,8 +1,9 @@
-@import "src/styles/variables.scss";
-@import "src/styles/extends.scss";
+@import "src/styles/variables";
+@import "../../extendsForBlock";
 
 .about-block__body {
-  @extend %for_block_padding;
+  @extend %for-block-padding;
+
   color: $white_main_color;
   width: auto;
   background-color: $green_main_color;

@@ -1,4 +1,4 @@
-@import "src/styles/variables.scss";
+@import "src/styles/variables";
 
 .timeline__container {
   padding: 10px 40px;
@@ -19,7 +19,7 @@
     z-index: 1;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width <= 600px) {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;

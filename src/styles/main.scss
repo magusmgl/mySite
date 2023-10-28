@@ -1,16 +1,16 @@
-@import "src/styles/fonts.scss";
+@import "src/styles/fonts";
 @import "~normalize.css";
-@import "variables.scss";
-@import "about-block/about_block.scss";
-@import "background/background-img.scss";
-@import "burger/burger.scss";
-@import "education-block/education-block.scss";
-@import "experience-block/experience-block.scss";
-@import "header/header.scss";
-@import "main-block/main_block.scss";
-@import "page/page.scss";
-@import "skills-block/skills-block.scss";
-@import "timeline/timeline.scss";
+@import "variables";
+@import "about-block/about_block";
+@import "background/background-img";
+@import "burger/burger";
+@import "education-block/education-block";
+@import "experience-block/experience-block";
+@import "header/header";
+@import "main-block/main_block";
+@import "page/page";
+@import "skills-block/skills-block";
+@import "timeline/timeline";
 
 html,
 body {
@@ -19,7 +19,8 @@ body {
   line-height: 1;
   font-size: $fs_regular;
   color: $black_main_color;
-  @media (max-width: 479px) {
+
+  @media (max-width <= 479px) {
     &.lock {
       overflow: hidden;
     }
@@ -32,7 +33,7 @@ body {
   padding: 0 15px;
   box-sizing: content-box;
 
-  @media (max-width: 479px) {
+  @media (max-width <= 479px) {
     padding: 0;
   }
 }

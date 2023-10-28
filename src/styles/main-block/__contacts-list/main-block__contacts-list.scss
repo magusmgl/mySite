@@ -1,7 +1,6 @@
-@import "src/styles/variables.scss";
+@import "src/styles/variables";
 
 .main-block__contacts-list {
-
   font-size: $text_fs_big;
   font-weight: $text_fw;
   line-height: $text_lh;
@@ -13,11 +12,11 @@
     justify-content: space-between;
   }
 
-  @media (max-width: 992px) {
+  @media (max-width <= 992px) {
     font-size: $text_fs_normal;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width <= 767px) {
     font-size: $text_fs_small;
   }
 }

@@ -1,4 +1,5 @@
-@import "src/styles/variables.scss";
+@import "src/styles/variables";
+
 .experience-block__title {
   color: $white_main_color;
   font-size: $title_fs_big;
@@ -6,12 +7,12 @@
   line-height: $title_lh;
   margin-bottom: 20px;
 
-  @media (max-width: 992px) {
+  @media (max-width <= 992px) {
     font-size: $title_fs_normal;
     margin-bottom: 10px;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width <= 767px) {
     font-size: $title_fs_small;
   }
 }

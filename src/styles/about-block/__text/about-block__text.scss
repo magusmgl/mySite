@@ -1,5 +1,5 @@
-@import "src/styles/variables.scss";
-@import "src/styles/extends.scss";
+@import "src/styles/variables";
+@import "../../extendsForBlock";
 
 .about-block__text {
   @extend %for-block_text

@@ -1,9 +1,10 @@
-@import "src/styles/variables.scss";
-@import "src/styles/extends.scss";
+@import "src/styles/variables";
+@import "../../extendsForBlock";
 
 .skills_block__item p {
-    color: $white_main_color;
     @extend %for-block_text;
+
+    color: $white_main_color;
     line-height: 20px;
     padding-top: 10px;
     padding-bottom: 10px;

@@ -1,17 +1,16 @@
 .page__background {
-  grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column: 1/4;
   height: 600px;
 
-  @media (max-width: 992px) {
+  @media (max-width <= 992px) {
     height: 445px;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width <= 767px) {
     height: 350px;
   }
 
-  @media (max-width: 479px) {
+  @media (max-width <= 479px) {
     display: none;
   }
 }

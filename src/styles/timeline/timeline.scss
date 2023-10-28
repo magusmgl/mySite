@@ -1,8 +1,8 @@
-@import "src/styles/variables.scss";
-@import "__container/timeline__container.scss";
-@import "__container/timeline__container_right.scss";
-@import "__container/timeline__container_left.scss";
-@import "__content/timeline__content.scss";
+@import "src/styles/variables";
+@import "__container/timeline__container";
+@import "__container/timeline__container_right";
+@import "__container/timeline__container_left";
+@import "__content/timeline__content";
 
 .timeline {
   background-color: transparent;
@@ -21,7 +21,7 @@
     margin-left: -3px;
 
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width <= 600px) {
       left: 31px;
     }
   }
