@@ -4,11 +4,9 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "dev": "webpack --config webpack.config.js",
-    "dev2": "webpack serve --config ./webpack.dev.js",
-    "start:dev": "webpack serve --config ./webpack.config.js",
-    "build": "webpack --mode production",
-    "watch": "webpack --mode development --watch",
+    "dev": "webpack --config webpack.dev.js",
+    "dev:serve": "webpack serve --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
     "minifyImages": "imagemin src/assets/img/* --out-dir=src/assets/img/minify",
     "scss": "node-sass -r --output-style expanded src/styles/ -o src/css"
   },

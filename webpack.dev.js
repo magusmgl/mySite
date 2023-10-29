@@ -1,12 +1,10 @@
 const path = require("path");
 const { merge } = require("webpack-merge");
 const common = require("./webpack.common.js");
-const TerserPlugin = require("terser-webpack-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const ESLintPlugin = require("eslint-webpack-plugin");
-const Webpack = require("webpack");
 const StylelintPlugin = require('stylelint-webpack-plugin');
+const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 
 module.exports = merge(common, {
@@ -23,6 +21,13 @@ module.exports = merge(common, {
         },
     },
     plugins: [
+        new HtmlWebpackPlugin(
+            {
+                title: "Production",
+                filename: "index.html",
+                template: "./index.pug"
+            }
+        ),
         new CleanWebpackPlugin(),
         new ESLintPlugin({}),
         new StylelintPlugin({
@@ -30,9 +35,4 @@ module.exports = merge(common, {
             resolveNestedSelectors: true,
         }),
     ],
-    optimization: {
-        minimize: false,
-        minimizer: [new TerserPlugin({}), new CssMinimizerPlugin({})]
-    },
-
 });
