@@ -1,5 +1,9 @@
 import "./styles/main.scss"
 
+if (process.env.NODE_ENV !== 'production') {
+    console.log('Looks like we are in development mode!');
+}
+
 let headerBurger = document.querySelector(".header__burger");
 const headerNav = document.querySelector(".header__menu");
 const body = document.querySelector("body");

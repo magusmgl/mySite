@@ -1,11 +1,12 @@
 const path = require("path")
-const HtmlWebpackPlugin = require("html-webpack-plugin")
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     context: path.resolve(__dirname, "src"),
     entry: {
-        app: "./index.ts",
+        main: "./index.ts",
     },
     plugins: [
         new HtmlWebpackPlugin(
@@ -15,6 +16,7 @@ module.exports = {
                 template: "./index.pug"
             }
         ),
+        new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),
     ],
     output: {
@@ -37,6 +39,8 @@ module.exports = {
                     loader: MiniCssExtractPlugin.loader,
                     options: {
                         esModule: true,
+                        hmr: true,
+                        reloadAll: true
                     }
                 },
                     "css-loader"],
