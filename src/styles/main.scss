@@ -20,7 +20,7 @@ body {
   font-size: $fs_regular;
   color: $black_main_color;
 
-  @media (max-width <= 479px) {
+  @media (width <  479px) {
     &.lock {
       overflow: hidden;
     }
@@ -33,7 +33,7 @@ body {
   padding: 0 15px;
   box-sizing: content-box;
 
-  @media (max-width <= 479px) {
+  @media (width <   479px) {
     padding: 0;
   }
 }
@@ -41,7 +41,7 @@ body {
 .wrapper {
   min-height: 100%;
   overflow: hidden;
-  color: $white_main_color;
+  color: $white-main-color;
 }
 
 /* обнуление */

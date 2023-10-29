@@ -11,7 +11,7 @@
     color: #939393;
   }
 
-  @media (max-width <= 479px) {
+  @media (width <   479px) {
     font-size: $header_fs_mobile;
   }
 }

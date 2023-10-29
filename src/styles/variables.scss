@@ -7,14 +7,15 @@ $yellow-main-color: rgb(227 184 43);
 $block-padding: 15px 20px;
 $block-padding-for-992: 13px 25px;
 $block-padding-for-767: 10px 20px;
-$block-shadow: 0 2px 5px 0 rgba(0 0 0 .16) 0 2px 10px 0 rgba(0 0 0 .12);
+$block-shadow: 0 2px 5px 0 #00000029,
+0 2px 10px 0 #0000001f;
 $fs-regular: 18px;
 $main-fs-big: 2.18rem;
 $main-fs-normal: 1.8rem;
 $main-fs-small: 1.3rem;
 $main-fw: 800;
 $main-lh: 110%;
-$main-ts: 2px 2px 4px rgba(0 0 0 0.29);
+$main-ts: 2px 2px 4px #0000004a;
 $main-title-fs-big: 1.2em;
 $main-title-fs-normal: 1.0em;
 $main-title-fs-small: 0.8em;

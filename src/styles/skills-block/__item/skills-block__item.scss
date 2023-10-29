@@ -2,7 +2,7 @@
 @import "../../extendsForBlock";
 
 .skills_block__item p {
-    @extend %for-block_text;
+    @extend %for-block-text;
 
     color: $white_main_color;
     line-height: 20px;

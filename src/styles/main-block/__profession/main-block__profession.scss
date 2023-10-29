@@ -8,13 +8,13 @@
   margin-bottom: 20px;
   text-shadow: $main_ts;
 
-  @media (max-width <= 992px) {
+  @media (width <   992px) {
     font-size: $main_title_fs_normal;
     margin-top: -5px;
     margin-bottom: 10px;
   }
 
-  @media (max-width <= 767px) {
+  @media (width <   767px) {
     font-size: $main_title_fs_small;
   }
 }

@@ -3,19 +3,19 @@
 .education-block__body {
   width: auto;
   padding: $block_padding;
-  box-shadow: $block_shadow;
+  box-shadow: $block-shadow;
   color: $black_main_color;
   background-color: $purple_main_color;
 
-  @media (max-width <= 992px) {
+  @media (width <   992px) {
     padding: $block_padding_for_992;
   }
 
-  @media (max-width <= 767px) {
+  @media (width <   767px) {
     padding: $block_padding_for_767;
   }
 
-  @media (max-width <= 479px) {
+  @media (width <   479px) {
     box-shadow: none;
   }
 }

@@ -1,7 +1,7 @@
 @import "src/styles/variables";
 
 .header__menu {
-  @media (max-width <= 767px) {
+  @media (width <   767px) {
     position: fixed;
     top: -100%;
     left: 0;
