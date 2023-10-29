@@ -1,28 +1,22 @@
 const path = require("path")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
-const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const ESLintPlugin = require('eslint-webpack-plugin');
-const StylelintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
     context: path.resolve(__dirname, "src"),
-    mode: "development",
-    devtool: 'inline-source-map',
-    entry: "./index.ts",
-    devServer: {
-        static: path.resolve(__dirname, "dist"),
-        compress: true,
-        port:9000,
-        hot: true,
-        open: true,
-        client: {
-            logging: 'info',
-        },
-
+    entry: {
+        app: "./index.ts",
     },
+    plugins: [
+        new HtmlWebpackPlugin(
+            {
+                title: "Production",
+                filename: "index.html",
+                template: "./index.pug"
+            }
+        ),
+        new MiniCssExtractPlugin(),
+    ],
     output: {
         filename: "[name].[contenthash].js",
         path: path.resolve(__dirname, "dist")
@@ -34,23 +28,7 @@ module.exports = {
         splitChunks: {
             chunks: "all"
         },
-        minimize: false,
-        minimizer: [new TerserPlugin({}), new CssMinimizerPlugin({})]
     },
-    plugins: [
-        new HtmlWebpackPlugin(
-            {
-                filename: "index.html",
-                template: "./index.pug"
-            }
-        ),
-        new CleanWebpackPlugin(),
-        new MiniCssExtractPlugin(),
-        new ESLintPlugin({
-        }),
-        new StylelintPlugin({
-        }),
-    ],
     module: {
         rules: [
             {
