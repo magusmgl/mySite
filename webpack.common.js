@@ -7,6 +7,7 @@ module.exports = {
     context: path.resolve(__dirname, "src"),
     entry: {
         main: "./index.ts",
+        data: "./data",
     },
     plugins: [
         new HtmlWebpackPlugin(

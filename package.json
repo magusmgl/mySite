@@ -8,7 +8,8 @@
     "dev:serve": "webpack serve --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "minifyImages": "imagemin src/assets/img/* --out-dir=src/assets/img/minify",
-    "scss": "node-sass -r --output-style expanded src/styles/ -o src/css"
+    "scss": "node-sass -r --output-style expanded src/styles/ -o src/css",
+    "json-server": "json-server --watch db.json"
   },
   "author": "m.glazunov",
   "description": "",
@@ -25,6 +26,7 @@
     "gulp-concat-css": "^3.1.0",
     "html-webpack-plugin": "^5.5.3",
     "imagemin-cli": "^7.0.0",
+    "json-server": "^0.17.4",
     "mini-css-extract-plugin": "^2.7.6",
     "node-sass": "^9.0.0",
     "pug": "^2.0.4",
@@ -47,6 +49,7 @@
     "webpack-merge": "^5.10.0"
   },
   "dependencies": {
+    "node-fetch": "^3.3.2",
     "normalize.css": "^8.0.1"
   }
 }
