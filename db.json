@@ -1,10 +1,10 @@
 {
   "skils": [
     {"id": 1, "name": "JavaSript", "level": 60 },
-    {"id": 2, "name": "Python", "level": 80  },
-    {"id": 3, "name": "CSS", "level": 60  },
-    {"id": 4, "name": "HTML", "level": 80  },
-    {"id": 5, "name": "Django", "level": 70  },
-    {"id": 6, "name": "Fast api", "level": 50  }
+    {"id": 2, "name": "Python", "level": 70  },
+    {"id": 3, "name": "CSS", "level": 80  },
+    {"id": 4, "name": "HTML", "level": 60  },
+    {"id": 5, "name": "Django", "level": 50  },
+    {"id": 6, "name": "Fast api", "level": 40  }
   ]
 }
